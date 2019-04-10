@@ -94,6 +94,9 @@ public class UserController {
 
 	}
 
+	/**
+	 * 通过@Query @Modify方式，进行修改操作
+	 */
 	@PostMapping("/annotationUpdate")
 	@Transactional
 	public void annotationUpdate() {
