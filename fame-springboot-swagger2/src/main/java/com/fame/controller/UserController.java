@@ -37,4 +37,5 @@ public class UserController {
 	public UserVo getUser(Long id, MultipartFile file) {
 		return new UserVo();
 	}
+
 }
