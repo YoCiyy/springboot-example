@@ -99,6 +99,7 @@ public class UserController {
     @GetMapping("/nativeQuery")
     public void nativeQuery(){
         System.out.println("设置 nativeQuery=true 开启原生sql查询："+userRepo.getTotalCount());
+
     }
 
 }
