@@ -23,5 +23,3 @@ spring:
       hibernate:
         #Hibernate方言
         dialect: org.hibernate.dialect.MySQL5Dialect
-
-
