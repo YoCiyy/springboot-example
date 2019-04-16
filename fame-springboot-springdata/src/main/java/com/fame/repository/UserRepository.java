@@ -70,5 +70,4 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
      */
     @Query(value = "SELECT COUNT(id) FROM sys_user" , nativeQuery = true)
     long getTotalCount();
-
 }
