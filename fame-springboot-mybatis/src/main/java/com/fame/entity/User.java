@@ -1,53 +1,34 @@
 package com.fame.entity;
 
-public class User {
-    private Long id;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-    private Integer age;
+import java.io.Serializable;
 
-    private String password;
+/**
+ * @author Y.yang
+ */
+@Data
+@Accessors(chain = true)
+public class User implements Serializable {
 
-    private String username;
+	private static final long serialVersionUID = -6510879035056033993L;
 
-    public Long getId() {
-        return id;
-    }
+	private Long id;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	private Integer age;
 
-    public Integer getAge() {
-        return age;
-    }
+	private String password;
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+	private String username;
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", age=" + age +
-                ", password='" + password + '\'' +
-                ", username='" + username + '\'' +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "User{" +
+				"id=" + id +
+				", age=" + age +
+				", password='" + password + '\'' +
+				", username='" + username + '\'' +
+				'}';
+	}
 }

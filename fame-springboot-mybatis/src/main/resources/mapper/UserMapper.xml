@@ -11,6 +11,33 @@
     <sql id="Base_Column_List">
     id, age, password, username
   </sql>
+    <insert id="add" parameterType="com.fame.entity.User">
+        INSERT INTO sys_user(
+            <if test="id != null and id != '' ">id,</if>
+            <if test="age != null and age != ''">age,</if>
+            <if test="password != null and password != ''">password,</if>
+            <if test="username != null and username != ''">username</if>
+        )VALUES (
+            <if test="id != null and id != '' ">#{id},</if>
+            <if test="age != null and age != ''">#{age},</if>
+            <if test="password != null and password != ''">#{password},</if>
+            <if test="username != null and username != ''">#{username}</if>
+        )
+    </insert>
+
+    <update id="update" parameterType="com.fame.entity.User">
+        UPDATE sys_user
+        <set>
+            <if test="age != null and age != '' ">age = #{age},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+            <if test="username != null and username != ''">username = #{username}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE FROM sys_user WHERE id = #{id}
+    </delete>
 
     <select id="findAll" resultMap="BaseResultMap" parameterType="com.fame.entity.User">
         SELECT
@@ -18,5 +45,11 @@
         FROM sys_user
     </select>
 
+    <select id="get" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user
+        WHERE id = #{id}
+    </select>
 
 </mapper>

@@ -1,5 +1,5 @@
 server:
-  #服务端口
+  # 服务端口
   port: 8081
 
 spring:
@@ -9,7 +9,12 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 
-#Mybatis 配置
+# Mybatis 配置
 mybatis:
   typeAliasesPackage: com.fame.entity
   mapperLocations: classpath:mapper/*.xml
+
+# 打印sql
+logging:
+  level:
+     com.fame.mapper : debug
