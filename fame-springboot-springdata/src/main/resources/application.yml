@@ -1,5 +1,5 @@
 server:
-  #服务端口
+  # 服务端口
   port: 8081
 
 spring:
@@ -9,18 +9,18 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
-    #指定数据库
+    # 指定数据库
     database: mysql
-    #打印sql
+    # 打印sql
     show-sql: true
     hibernate:
-      #开启数据库更新表
+      # 开启数据库更新表
       ddl-auto: update
-      #指定命名策略
+      # 指定命名策略
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
     properties:
       hibernate:
-        #Hibernate方言
+        # Hibernate方言
         dialect: org.hibernate.dialect.MySQL5Dialect
 
