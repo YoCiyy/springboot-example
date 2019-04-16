@@ -17,4 +17,5 @@ mybatis:
 # 打印sql
 logging:
   level:
+     # 配置mapper接口的包路径
      com.fame.mapper : debug

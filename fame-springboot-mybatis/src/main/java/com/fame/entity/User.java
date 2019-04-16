@@ -9,6 +9,7 @@ import java.io.Serializable;
  * @author Y.yang
  */
 @Data
+// 开启链式编程
 @Accessors(chain = true)
 public class User implements Serializable {
 
