@@ -13,12 +13,12 @@ import java.io.Serializable;
  */
 @Entity
 @Data
-/*开启lombok链式编程*/
+/** 开启lombok链式编程 */
 @Accessors(chain = true)
 @DynamicInsert(true)
 @DynamicUpdate(true)
 @Table(name = "sys_user")
-public class User implements Serializable{
+public class User implements Serializable {
 
 	private static final long serialVersionUID = 6425411731900579688L;
 
@@ -27,7 +27,7 @@ public class User implements Serializable{
 	@Column(columnDefinition = "bigint(20) comment '主键'", nullable = false)
 	private long id;
 
-	@Column(columnDefinition = "varchar(255) comment '用户姓名'",nullable = false, unique = true)
+	@Column(columnDefinition = "varchar(255) comment '用户姓名'", nullable = false, unique = true)
 	private String username;
 
 	@Column(columnDefinition = "varchar(255) comment '密码'", nullable = false)
