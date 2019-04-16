@@ -34,7 +34,7 @@ public class SwaggerConfig {
 				// 指定当前包路径
 				.apis(RequestHandlerSelectors.basePackage("com.fame.controller"))
 				// 扫描所有
-//				.apis(RequestHandlerSelectors.any())
+				// .apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any())
 				.build();
 	}
@@ -51,6 +51,5 @@ public class SwaggerConfig {
 				.version("版本号: 1.0")
 				.build();
 	}
-
 
 }

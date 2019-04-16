@@ -37,5 +37,4 @@ public class UserVo implements Serializable {
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm", timezone = "GMT+8")
 	private Date applyBeginTime;
 
-
 }
