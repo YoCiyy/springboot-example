@@ -46,15 +46,17 @@
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
-        <!-- 指定数据库表 -->
-        <table tableName="tb_vq" schema=""
+        <!-- 指定数据库表 ，设置是否要生成Exemple方法-->
+        <table tableName="tb_user" schema=""
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableUpdateByExample="false"
                enableSelectByExample="false"
                selectByExampleQueryId="false">
+            <!--去除表明前缀tb_,注意严格控制大小写-->
             <domainObjectRenamingRule searchString="^Tb" replaceString="" />
-            <columnRenamingRule searchString="^Tb" replaceString=""/>
+            <!--去除列字段前缀,注意严格控制大小写-->
+            <columnRenamingRule searchString="^sys" replaceString=""/>
         </table>
     </context>
 </generatorConfiguration>
