@@ -1,24 +1,20 @@
 package com.fame.entity;
 
 import lombok.Data;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.io.Serializable;
-
-/**
- * @author Y.yang
- */
 @Data
 // 开启链式编程
 @Accessors(chain = true)
-public class User implements Serializable {
+@ToString
+public class User {
+	private Long id;
 
-    private static final long serialVersionUID = -6510879035056033991L;
+	private Integer age;
 
-    private Integer id;
+	private String password;
 
-    private String sex;
-
-    private String username;
+	private String username;
 
 }
