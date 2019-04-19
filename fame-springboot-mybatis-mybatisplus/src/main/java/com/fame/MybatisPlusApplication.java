@@ -1,8 +1,19 @@
 package com.fame;
 
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
- * Created by Y.yang on 2019/4/18.
+ * @author Y.yang
+ * @date 2019/4/18
  */
+@SpringBootApplication
+@MapperScan("com.baomidou.mybatisplus.samples.quickstart.mapper")
 public class MybatisPlusApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MybatisPlusApplication.class, args);
+	}
 
 }
