@@ -1,0 +1,21 @@
+server:
+  # 服务端口
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot-mybatis
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+# Mybatis 配置
+mybatis:
+  typeAliasesPackage: com.fame.entity
+  mapperLocations: classpath:mapper/*.xml
+
+# 打印sql
+logging:
+  level:
+     # 配置mapper接口的包路径
+     com.fame.mapper : debug
