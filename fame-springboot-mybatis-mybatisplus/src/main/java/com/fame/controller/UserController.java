@@ -45,8 +45,8 @@ public class UserController {
 	 * 用户信息修改
 	 */
 	@PutMapping("/update")
-	public void update() {
-		User user = new User().setUsername("mp update").setPassword("123").setAge(24);
+	public void update(Long id) {
+		User user = new User().setId(id).setUsername("mp update").setPassword("123").setAge(24);
 		userService.updateByUser(user);
 	}
 
@@ -54,7 +54,7 @@ public class UserController {
 	 * 用户信息删除
 	 */
 	@DeleteMapping("/delete")
-	public void delete() {
-		userService.deleteById(1L);
+	public void delete(Long id) {
+		userService.deleteById(id);
 	}
 }
