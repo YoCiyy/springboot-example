@@ -60,7 +60,7 @@ public class UserController {
 		users.add(new User().setId(2L));
 		users.add(new User().setId(3L));
 		users.add(new User().setId(4L));
-		userRepo.delete(users);
+		userRepo.deleteAll(users);
 	}
 
 	/**
