@@ -1,0 +1,18 @@
+## master 主节点 数据源配置
+master:
+  datasource:
+    # springboot 1.x 使用 url 方式进行配置
+    # url: jdbc:mysql://localhost:3306/springboot-mutil-datasource-master?useUnicode=true&characterEncoding=utf8
+    # 使用@ConfigurationProperties() 配置属性，升级springboot至2.x , 需将url改成jdbc-url，否则会报找不到jdbcUrl
+    jdbc-url: jdbc:mysql://localhost:3306/springboot-mutil-datasource-master?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+
+## cluster 从节点 数据源配置
+cluster:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/springboot-mutil-datasource-cluster?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
