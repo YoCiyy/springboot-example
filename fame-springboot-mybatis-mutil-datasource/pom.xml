@@ -51,7 +51,7 @@
             <version>${mysql-connector.version}</version>
         </dependency>
 
-        <!-- Druid 数据连接池相关依赖 -->
+        <!-- Druid 数据连接池 相关依赖 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>

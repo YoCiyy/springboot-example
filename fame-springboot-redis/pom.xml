@@ -8,7 +8,7 @@
     <artifactId>fame-springboot-redis</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!--springBoot相关依赖-->
+    <!--springBoot 相关依赖-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!--springBoot相关依赖-->
+        <!--springBoot 相关依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -34,16 +34,14 @@
             <artifactId>spring-boot-starter-redis</artifactId>
         </dependency>
 
-        <!--mybatis相关依赖-->
+        <!--mybatis 相关依赖-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis-spring-boot.version}</version>
         </dependency>
 
-
-
-        <!--mysql驱动相关依赖-->
+        <!--mysql驱动 相关依赖-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

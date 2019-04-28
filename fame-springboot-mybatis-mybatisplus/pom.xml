@@ -7,7 +7,7 @@
     <groupId>com.fame</groupId>
     <artifactId>fame-springboot-mybatis-mybatisplus</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <!--springBoot相关-->
+    <!--springBoot 相关依赖-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,7 +23,7 @@
     </properties>
 
     <dependencies>
-        <!--springBoot相关-->
+        <!--springBoot 相关依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -36,7 +36,7 @@
             <version>${mybatis-plus.version}</version>
         </dependency>
 
-        <!--mybatis-plus 代码生成器相关依赖-->
+        <!--mybatis-plus代码生成器 相关依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
@@ -50,7 +50,7 @@
             <version>2.3.28</version>
         </dependency>
 
-        <!--mysql驱动相关-->
+        <!--mysql驱动 相关依赖-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -66,5 +66,4 @@
         </dependency>
 
     </dependencies>
-
 </project>
