@@ -6,7 +6,7 @@
 >
 > 编译器：IntelliJ IDEA 2017.1.4
 >
-> mysql驱动：mysql-connector-java-5.1.39.jar （用于你逆向工程使用）
+> mysql驱动：mysql-connector-java-5.1.39.jar （用于逆向工程使用）
 >
 > Genarator 版本：mybatis-generator-maven-plugin （1.3.6）
 >
